@@ -1,0 +1,42 @@
+.nav{
+    width: 90px;
+    height: 100%;
+    background-color:pink;
+    position: relative;
+    float: left;
+}
+.nav li {
+ text-align: center;
+ height: 50px;
+ line-height: 50px;
+
+
+
+}
+.nav li a{
+    width: 100%;
+    display: block;
+    height: 100%;
+    color: blue;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
+.content {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+.content li {
+    text-align: center;
+    float: left;
+    width: 33.33%;
+}
+.content li img{
+    height: 62px;
+    width: 62px;
+    margin: 0 auto;
+}
+.nav li.now a {
+    border-right: none;
+    background-color:#fff;
+}
