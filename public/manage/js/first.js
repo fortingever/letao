@@ -78,7 +78,7 @@ $(function () {
     //var categoryName = $("[name='categoryName']").val();
 
     e.preventDefault();
-    console.log("呵呵");
+   console.log('1111')
     //发送ajax请求，
     $.ajax({
       type:"post",

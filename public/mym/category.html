@@ -94,17 +94,20 @@
     </div>
 
     <script type="text/html" id="nav_tmp">
-    {{each rows v i}}
-        <li data-id="{{v.id}}" class="{{v.id==1?'now':''}}"><a href="#">{{ v.categoryName}}</a></li>
-    {{/each}}
-    </script>
+        {{each rows v i}}
+            <li data-id="{{v.id}}" class="{{v.id==1?'now':''}}"><a href="#">{{ v.categoryName}}</a></li>
+        {{/each}}
+        </script>
     <script type="text/html" id="second_tmp">
-    {{each rows v i}}
-    <li>
+        {{if rows.length == 0}}
+        <div class="category_tips">该分类下没有更多的品牌信息</div>
+        {{/if}}
+        {{each rows v i}}
+        <li>
             <img src="{{v.brandLogo}}" alt="">
             <p>{{v.brandName}}</p>
         </li>
-    {{/each}}
+        {{/each}}
     </script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/mui/js/mui.min.js"></script>

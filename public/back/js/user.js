@@ -30,4 +30,31 @@ function render(){
 }
 
 render();
+
+
+$('tbody').on('click','.btn',function(){
+    $('#userModal').modal('show');
+
+    var id=$(this).parent().data('id');
+    var isDelete=$(this).hasClass('btn-danger')?0:1;
+
+    $('.btn_change').off().on('click',function(){
+        console.log('111')
+        $.ajax({
+            type:'post',
+            url:'/user/updateUser',
+            data:{
+                id:id,
+                isDelete:isDelete
+            },
+            success:function(info){
+                if(info.success){
+                    $('#userModal').modal('hide');
+                }
+                render();
+            }
+            
+        })
+    })
+})
 })

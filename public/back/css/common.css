@@ -28,6 +28,9 @@ a:link, a:visited, a:hover, a:active {
 .mt-150{
     margin-top:150px;
 }
+.mb_20{
+    margin-bottom: 20px;
+}
 .panel-default{
     border:none;
 }
@@ -99,10 +102,12 @@ a:link, a:visited, a:hover, a:active {
 }
 .nav li a:hover{
     border-left: 3px solid blue;
+     background-color:#000;
 }
-.nav>ul>li>a.now{
+.nav ul li a.now{
     border-left: 3px solid blue;
     background-color:#000;
+   
 }
 .nav .chirld a{
     padding-left: 50px;
