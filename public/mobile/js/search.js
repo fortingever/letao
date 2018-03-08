@@ -35,6 +35,7 @@ $(function () {
         localStorage.removeItem("lt_search_history");
         //重新渲染
         render();
+        
       }
     })
 

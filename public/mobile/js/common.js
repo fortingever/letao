@@ -28,7 +28,7 @@ var tools = {
     });
     return obj;
   },
-  getSearch: function(key){
+  getSearch:function(key){
     return this.getSearchObj()[key];
   }
 }
